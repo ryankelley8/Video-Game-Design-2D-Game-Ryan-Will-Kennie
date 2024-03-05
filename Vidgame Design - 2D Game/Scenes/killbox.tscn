@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bytvetkuttom7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4g5an"]
+size = Vector2(397, 211)
+
+[node name="Killbox" type="Node2D"]
+
+[node name="Killbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox"]
+position = Vector2(285, 172)
+shape = SubResource("RectangleShape2D_4g5an")
+
+[node name="ColorRect" type="ColorRect" parent="Killbox"]
+offset_left = 85.0
+offset_top = 69.0
+offset_right = 484.0
+offset_bottom = 280.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="Killbox" to="Killbox" method="_on_body_entered"]
