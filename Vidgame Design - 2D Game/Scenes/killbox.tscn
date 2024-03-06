@@ -17,5 +17,3 @@ offset_top = 69.0
 offset_right = 484.0
 offset_bottom = 280.0
 metadata/_edit_use_anchors_ = true
-
-[connection signal="body_entered" from="Killbox" to="Killbox" method="_on_body_entered"]
