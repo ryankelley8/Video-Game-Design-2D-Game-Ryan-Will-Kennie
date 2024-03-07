@@ -30,11 +30,15 @@ func _physics_process(delta):
 func _process(delta):
 	if Input.is_action_pressed("Run right"):
 		position.x += 2.5
-	if Input.is_action_pressed("Run left"):
+		$AnimatedSprite2D.flip_h = false
+		$AnimatedSprite2D.play("Run")
+	elif Input.is_action_pressed("Run left"):
 		position.x -= 2.5
+		$AnimatedSprite2D.flip_h = true
+		$AnimatedSprite2D.play("Run")
+	else: $AnimatedSprite2D.play("Idle")
 	
-	if Input.is_action_pressed("Run right"):
-		_animated_sprite.play("Run right")
-	else: _animated_sprite.play("Idle right")
-	
+	if Input.is_action_pressed("Attack") and Input.is_action_pressed("Run right"):
+		$AnimatedSprite2D.play("Side Attack")
+		
 
