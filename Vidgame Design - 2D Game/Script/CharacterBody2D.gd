@@ -14,7 +14,7 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
@@ -30,11 +30,16 @@ func _physics_process(delta):
 func _process(delta):
 	if Input.is_action_pressed("Run right"):
 		position.x += 2.5
-	if Input.is_action_pressed("Run left"):
+		$AnimatedSprite2D.flip_h = false
+		$AnimatedSprite2D.play("Run")
+	elif Input.is_action_pressed("Run left"):
 		position.x -= 2.5
+		$AnimatedSprite2D.flip_h = true
+		$AnimatedSprite2D.play("Run")
+	else: $AnimatedSprite2D.play("Idle")
 	
-	if Input.is_action_pressed("Run right"):
-		_animated_sprite.play("Run right")
-	else: _animated_sprite.play("Idle right")
-	
+#func _process(delta):
+	#if Input.is_action_pressed("Attack"):
+		#$AnimatedSprite2D.play("Side Attack")
+	#else: $AnimatedSprite2D.play("Idle")
 
