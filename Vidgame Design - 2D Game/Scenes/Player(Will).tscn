@@ -1,7 +1,7 @@
 [gd_scene load_steps=53 format=3 uid="uid://dkqvwh031it41"]
 
 [ext_resource type="Script" path="res://Script/CharacterBody2D.gd" id="1_n7ciu"]
-[ext_resource type="Texture2D" uid="uid://cmubbwaooncu0" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="2_4synh"]
+[ext_resource type="Texture2D" uid="uid://dccsln40o65wp" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="2_4synh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2stvc"]
 atlas = ExtResource("2_4synh")

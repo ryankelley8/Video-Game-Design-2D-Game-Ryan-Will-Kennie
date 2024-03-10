@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [gd_scene format=3 uid="uid://bs7lvi7jsuk55"]
 
 [node name="Main" type="Node2D"]
@@ -14,4 +13,4 @@
 
 [node name="Player" parent="." instance=ExtResource("2_ixk1j")]
 position = Vector2(185, -389)
->>>>>>> 15c12d857abf438ff1c88b92aff91f9c20ba173b
+

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cd4aa4fmnk8wi"]
 
-[ext_resource type="Texture2D" uid="uid://b1n5r8u38aw4d" path="res://Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_aa2sc"]
+[ext_resource type="Texture2D" uid="uid://bccyldhv8bw0g" path="res://Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_aa2sc"]
 [ext_resource type="Script" path="res://Script/Killbox.gd" id="1_ukx41"]
 
 [sub_resource type="GDScript" id="GDScript_7jfqg"]
@@ -558,7 +558,7 @@ position = Vector2(1275, 69.5)
 shape = SubResource("RectangleShape2D_usnid")
 
 [node name="Spawn Point" type="Marker2D" parent="."]
-position = Vector2(194, -293)
+position = Vector2(90, -59)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_p5guv")
