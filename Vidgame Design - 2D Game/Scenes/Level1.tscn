@@ -13,7 +13,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 "
 
@@ -557,9 +557,6 @@ script = ExtResource("1_ukx41")
 position = Vector2(1275, 69.5)
 shape = SubResource("RectangleShape2D_usnid")
 
-[node name="Spawn Point" type="Marker2D" parent="."]
-position = Vector2(90, -59)
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_p5guv")
 format = 2
@@ -575,19 +572,19 @@ shape = SubResource("RectangleShape2D_exjb0")
 [node name="Platform 2" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform 2"]
-position = Vector2(680, -87)
+position = Vector2(717, -111)
 shape = SubResource("RectangleShape2D_exjb0")
 
 [node name="Platform 3" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform 3"]
-position = Vector2(793, -167)
+position = Vector2(827, -191)
 shape = SubResource("RectangleShape2D_exjb0")
 
 [node name="Platform 4" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform 4"]
-position = Vector2(888, -248)
+position = Vector2(938, -273)
 shape = SubResource("RectangleShape2D_exjb0")
 
 [connection signal="body_entered" from="Killbox" to="Killbox" method="_on_body_entered"]
