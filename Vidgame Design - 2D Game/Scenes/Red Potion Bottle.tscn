@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://d3la5300vd8as"]
 
-[ext_resource type="Script" path="res://Scenes/Potion Bottle.gd" id="1_kgxyu"]
+[ext_resource type="Script" path="res://Scenes/Red Potion Bottle.gd" id="1_e3dv2"]
 [ext_resource type="Texture2D" uid="uid://cloyqa143i1rw" path="res://Powerups/animated_items.png" id="1_yf0bl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pxvt1"]
@@ -71,7 +71,7 @@ animations = [{
 size = Vector2(22, 24)
 
 [node name="Red Potion Bottle" type="Node2D"]
-script = ExtResource("1_kgxyu")
+script = ExtResource("1_e3dv2")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dhu85pf6rn4dl"]
 
-[ext_resource type="Script" path="res://Scenes/Money Bag Power-Up.gd" id="1_foyto"]
+[ext_resource type="Script" path="res://Scenes/Purple Potion.gd" id="1_0ulgi"]
 [ext_resource type="Texture2D" uid="uid://cloyqa143i1rw" path="res://Powerups/animated_items.png" id="2_uosxo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pbo6q"]
@@ -68,10 +68,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0y3n1"]
-size = Vector2(56, 58)
+size = Vector2(31, 33)
 
-[node name="Potion Bottle 2" type="Node2D"]
-script = ExtResource("1_foyto")
+[node name="Purple Potion Bottle" type="Node2D"]
+script = ExtResource("1_0ulgi")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
@@ -81,5 +81,5 @@ sprite_frames = SubResource("SpriteFrames_7yq74")
 animation = &"Idol"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-2, -1)
+position = Vector2(-0.5, -3)
 shape = SubResource("RectangleShape2D_0y3n1")

@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/Player(Will).tscn" id="2_kdix1"]
 [ext_resource type="PackedScene" uid="uid://cu67wrudspsdt" path="res://Scenes/enemy.tscn" id="3_bk1nu"]
 [ext_resource type="PackedScene" uid="uid://dpg5qt6xm6tb4" path="res://Scenes/enemy 2.tscn" id="4_pcvhq"]
-[ext_resource type="PackedScene" uid="uid://d3la5300vd8as" path="res://Scenes/Potion Bottle.tscn" id="5_2b5v8"]
-[ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Money Bag Power-Up.tscn" id="6_wgmg4"]
+[ext_resource type="PackedScene" uid="uid://d3la5300vd8as" path="res://Scenes/Red Potion Bottle.tscn" id="5_2b5v8"]
+[ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Purple Potion Bottle.tscn" id="6_wgmg4"]
 
 [node name="Gameplay" type="Node2D"]
 scale = Vector2(3.5, 3.5)
@@ -30,3 +30,4 @@ scale = Vector2(2, 2)
 
 [node name="Money Bag Power Up" parent="." instance=ExtResource("6_wgmg4")]
 position = Vector2(642.286, -38.2857)
+scale = Vector2(2, 2)
