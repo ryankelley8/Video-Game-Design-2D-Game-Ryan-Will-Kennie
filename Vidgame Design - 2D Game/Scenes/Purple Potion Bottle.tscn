@@ -1,0 +1,85 @@
+[gd_scene load_steps=13 format=3 uid="uid://dhu85pf6rn4dl"]
+
+[ext_resource type="Script" path="res://Scenes/Purple Potion.gd" id="1_0ulgi"]
+[ext_resource type="Texture2D" uid="uid://cloyqa143i1rw" path="res://Powerups/animated_items.png" id="2_uosxo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbo6q"]
+atlas = ExtResource("2_uosxo")
+region = Rect2(0, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74561"]
+atlas = ExtResource("2_uosxo")
+region = Rect2(32, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23do7"]
+atlas = ExtResource("2_uosxo")
+region = Rect2(64, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6tjw"]
+atlas = ExtResource("2_uosxo")
+region = Rect2(96, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ommmy"]
+atlas = ExtResource("2_uosxo")
+region = Rect2(128, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jyb7"]
+atlas = ExtResource("2_uosxo")
+region = Rect2(160, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5l5e"]
+atlas = ExtResource("2_uosxo")
+region = Rect2(192, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ch21a"]
+atlas = ExtResource("2_uosxo")
+region = Rect2(224, 352, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7yq74"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbo6q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74561")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23do7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6tjw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ommmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jyb7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5l5e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ch21a")
+}],
+"loop": true,
+"name": &"Idol",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0y3n1"]
+size = Vector2(31, 33)
+
+[node name="Purple Potion Bottle" type="Node2D"]
+script = ExtResource("1_0ulgi")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(-1, 0)
+sprite_frames = SubResource("SpriteFrames_7yq74")
+animation = &"Idol"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-0.5, -3)
+shape = SubResource("RectangleShape2D_0y3n1")
