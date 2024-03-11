@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://ygfsesb6xc0r"]
 
-[ext_resource type="Texture2D" uid="uid://c8ywsxlncoaaq" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Yellow/Warrior_Yellow.png" id="1_l2cu3"]
+[ext_resource type="Texture2D" uid="uid://mqeig0lc0iqy" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Yellow/Warrior_Yellow.png" id="1_l2cu3"]
 [ext_resource type="Script" path="res://Script/Ryans Script/AnimatedSprite2D.gd" id="2_ooyyy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qimmg"]

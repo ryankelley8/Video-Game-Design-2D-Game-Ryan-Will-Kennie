@@ -373,18 +373,18 @@ height = 70.0
 
 [node name="Player" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="Main Character" type="CharacterBody2D" parent="."]
 script = ExtResource("1_n7ciu")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Main Character"]
 sprite_frames = SubResource("SpriteFrames_bhocb")
 animation = &"Run"
 autoplay = "Idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Main Character"]
 shape = SubResource("CapsuleShape2D_7erb0")
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="Main Character"]
 
 [node name="Spawn" type="Marker2D" parent="."]
 position = Vector2(90, -59)
