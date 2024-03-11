@@ -1,7 +1,7 @@
 [gd_scene load_steps=35 format=3 uid="uid://cu67wrudspsdt"]
 
 [ext_resource type="Texture2D" uid="uid://dfa7lqsp2i6sa" path="res://Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/Torch_Blue.png" id="1_fxhhp"]
-[ext_resource type="Script" path="res://Script/Enemy.gd" id="1_jbawk"]
+[ext_resource type="Script" path="res://Script/Will's Script/Enemy.gd" id="1_klvmw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jxu7p"]
 atlas = ExtResource("1_fxhhp")
@@ -249,7 +249,7 @@ height = 68.0
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(0, -1)
-script = ExtResource("1_jbawk")
+script = ExtResource("1_klvmw")
 
 [node name="Marker2D" type="Marker2D" parent="CharacterBody2D"]
 position = Vector2(40, 2)

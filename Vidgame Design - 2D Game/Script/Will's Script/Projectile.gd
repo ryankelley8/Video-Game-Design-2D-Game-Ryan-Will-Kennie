@@ -14,6 +14,6 @@ func _process(_delta):
 
 
 
-func _on_area_2d_body_entered(body):
-	body.damage(damage_amount)
-	queue_free()
+#func _on_area_2d_body_entered(body):
+	#body.damage(damage_amount)
+	#queue_free()

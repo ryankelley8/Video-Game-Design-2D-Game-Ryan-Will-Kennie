@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-const projectile = preload("res://Scenes/projectile.tscn")
+const projectile = preload("res://Scenes/Enemy/projectile.tscn")
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
