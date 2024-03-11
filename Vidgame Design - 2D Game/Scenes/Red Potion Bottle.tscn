@@ -1,10 +1,11 @@
 [gd_scene load_steps=13 format=3 uid="uid://d3la5300vd8as"]
 
-Vidgame Design - 2D Game/Scenes/Powerups/Potion Bottle.tscn
+<<<<<<<< HEAD:Vidgame Design - 2D Game/Scenes/Powerups/Potion Bottle.tscn
 [ext_resource type="Texture2D" uid="uid://cloyqa143i1rw" path="res://Scenes/Powerups/animated_items.png" id="1_yf0bl"]
+========
 [ext_resource type="Script" path="res://Scenes/Red Potion Bottle.gd" id="1_e3dv2"]
 [ext_resource type="Texture2D" uid="uid://cloyqa143i1rw" path="res://Powerups/animated_items.png" id="1_yf0bl"]
-
+>>>>>>>> 8a0be282db48d9229b334f65ffad766d33e6ad80:Vidgame Design - 2D Game/Scenes/Red Potion Bottle.tscn
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pxvt1"]
 atlas = ExtResource("1_yf0bl")
