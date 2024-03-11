@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Vidgame Design - 2D Game"
-run/main_scene="res://Scenes/gameplay.tscn"
+run/main_scene="res://Scenes/Main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 

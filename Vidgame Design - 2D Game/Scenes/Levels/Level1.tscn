@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cd4aa4fmnk8wi"]
 
+[ext_resource type="Script" path="res://Script/Will's Script/Killbox.gd" id="1_03au1"]
 [ext_resource type="Texture2D" uid="uid://bccyldhv8bw0g" path="res://Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_aa2sc"]
-[ext_resource type="Script" path="res://Script/Killbox.gd" id="1_ukx41"]
 
 [sub_resource type="GDScript" id="GDScript_7jfqg"]
 script/source = "extends Node2D
@@ -551,7 +551,7 @@ shape = SubResource("RectangleShape2D_cowm8")
 
 [node name="Killbox" type="Area2D" parent="."]
 position = Vector2(4, 197)
-script = ExtResource("1_ukx41")
+script = ExtResource("1_03au1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox"]
 position = Vector2(1275, 69.5)

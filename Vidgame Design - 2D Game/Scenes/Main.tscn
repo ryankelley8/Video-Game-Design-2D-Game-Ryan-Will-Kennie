@@ -1,16 +1,38 @@
-[gd_scene format=3 uid="uid://bs7lvi7jsuk55"]
+[gd_scene load_steps=7 format=3 uid="uid://cnn20wybegl3c"]
 
-[node name="Main" type="Node2D"]
-=======
-[gd_scene load_steps=3 format=3 uid="uid://bs7lvi7jsuk55"]
+[ext_resource type="PackedScene" uid="uid://cd4aa4fmnk8wi" path="res://Scenes/Levels/Level1.tscn" id="1_osqkn"]
+[ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/Player(Will).tscn" id="2_15642"]
+[ext_resource type="PackedScene" uid="uid://cu67wrudspsdt" path="res://Scenes/Enemy/enemy.tscn" id="3_atd7d"]
+[ext_resource type="PackedScene" uid="uid://dpg5qt6xm6tb4" path="res://Scenes/Enemy/enemy 2.tscn" id="4_ju0o5"]
+[ext_resource type="PackedScene" uid="uid://d3la5300vd8as" path="res://Scenes/Powerups/Potion Bottle.tscn" id="5_6lqyg"]
+[ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Powerups/Money Bag Power-Up.tscn" id="6_3xvau"]
 
-[ext_resource type="PackedScene" uid="uid://cd4aa4fmnk8wi" path="res://Scenes/william.tscn" id="1_ysply"]
-[ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/player.tscn" id="2_ixk1j"]
+[node name="Gameplay" type="Node2D"]
+scale = Vector2(3.5, 3.5)
 
-[node name="Main" type="Node2D"]
+[node name="Level1" parent="." instance=ExtResource("1_osqkn")]
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(3.5, 3.5)
 
-[node name="William" parent="." instance=ExtResource("1_ysply")]
+[node name="Player" parent="." instance=ExtResource("2_15642")]
+position = Vector2(90, -57)
 
-[node name="Player" parent="." instance=ExtResource("2_ixk1j")]
-position = Vector2(185, -389)
+[node name="Enemy" parent="." instance=ExtResource("3_atd7d")]
+position = Vector2(841, -42)
 
+[node name="Enemy 2" parent="." instance=ExtResource("4_ju0o5")]
+position = Vector2(491.143, -72.5714)
+scale = Vector2(3.5, 3.5)
+
+[node name="Potion Bottle" parent="." instance=ExtResource("5_6lqyg")]
+position = Vector2(1060, -38.8571)
+scale = Vector2(2, 2)
+
+[node name="Money Bag Power Up" parent="." instance=ExtResource("6_3xvau")]
+position = Vector2(642.286, -38.2857)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(668, -164)
+
+[node name="Camera2D" type="Camera2D" parent="Marker2D"]
+zoom = Vector2(0.25, 0.25)
