@@ -16,15 +16,15 @@ position = Vector2(2.08165e-12, 2.08165e-12)
 position = Vector2(616.857, -172.571)
 
 [node name="Enemy" parent="." instance=ExtResource("3_atd7d")]
-position = Vector2(1088, -45.7143)
+position = Vector2(1406.57, -258.857)
 
 [node name="Enemy 2" parent="." instance=ExtResource("4_ju0o5")]
 position = Vector2(317.143, -68)
 scale = Vector2(3.5, 3.5)
 
 [node name="Potion Bottle" parent="." instance=ExtResource("6_3xvau")]
-position = Vector2(380.286, -57.7143)
+position = Vector2(969.143, -26)
 scale = Vector2(2, 2)
 
 [node name="Money Bag Power Up" parent="." instance=ExtResource("6_3xvau")]
-position = Vector2(412, -115.143)
+position = Vector2(486, -84.5714)
