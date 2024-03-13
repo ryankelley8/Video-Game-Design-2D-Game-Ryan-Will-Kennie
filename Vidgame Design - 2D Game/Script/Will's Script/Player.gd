@@ -25,7 +25,7 @@ func _physics_process(delta):
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			$AnimatedSprite2D.play("Idle")
-		move_and_slide()
+			move_and_slide()
 	
 	
 		if velocity.x > 0:
