@@ -11,7 +11,6 @@ scale = Vector2(3.5, 3.5)
 
 [node name="Level1" parent="." instance=ExtResource("1_osqkn")]
 position = Vector2(2.08165e-12, 2.08165e-12)
-scale = Vector2(3.5, 3.5)
 
 [node name="Player" parent="." instance=ExtResource("2_15642")]
 position = Vector2(90, -57)
