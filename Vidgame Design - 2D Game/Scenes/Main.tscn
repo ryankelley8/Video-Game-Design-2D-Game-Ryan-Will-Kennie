@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cu67wrudspsdt" path="res://Scenes/Enemy/enemy.tscn" id="3_atd7d"]
 [ext_resource type="PackedScene" uid="uid://dpg5qt6xm6tb4" path="res://Scenes/Enemy/enemy 2.tscn" id="4_ju0o5"]
 [ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Purple Potion Bottle.tscn" id="6_3xvau"]
-[ext_resource type="PackedScene" uid="uid://crhb1t01hdnp6" path="res://RedPotionPU.tscn" id="6_ej1hc"]
+[ext_resource type="PackedScene" path="res://RedPotionPU.tscn" id="6_ej1hc"]
 
 [node name="Gameplay" type="Node2D"]
 scale = Vector2(3.5, 3.5)
@@ -28,11 +28,11 @@ scale = Vector2(3.5, 3.5)
 position = Vector2(969.143, -26)
 scale = Vector2(2, 2)
 
-[node name="Money Bag Power Up" parent="." instance=ExtResource("6_3xvau")]
+[node name="Potion Bottle 2" parent="." instance=ExtResource("6_3xvau")]
 position = Vector2(1060, -38.8571)
 scale = Vector2(2, 2)
 
-[node name="Money Bag Power Up" parent="." instance=ExtResource("6_3xvau")]
+[node name="Potion Bottle 3" parent="." instance=ExtResource("6_3xvau")]
 position = Vector2(642.286, -38.2857)
 
 [node name="Red Potion" parent="." instance=ExtResource("6_ej1hc")]
@@ -43,4 +43,3 @@ position = Vector2(668, -164)
 
 [node name="Camera2D" type="Camera2D" parent="Marker2D"]
 zoom = Vector2(0.25, 0.25)
-
