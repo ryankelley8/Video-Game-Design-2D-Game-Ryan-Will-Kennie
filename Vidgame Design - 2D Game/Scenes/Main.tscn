@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cu67wrudspsdt" path="res://Scenes/Enemy/enemy.tscn" id="3_atd7d"]
 [ext_resource type="PackedScene" uid="uid://dpg5qt6xm6tb4" path="res://Scenes/Enemy/enemy 2.tscn" id="4_ju0o5"]
 [ext_resource type="PackedScene" uid="uid://d3la5300vd8as" path="res://Scenes/Powerups/Potion Bottle.tscn" id="5_6lqyg"]
-[ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Powerups/Money Bag Power-Up.tscn" id="6_3xvau"]
+[ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Purple Potion Bottle.tscn" id="6_3xvau"]
 
 [node name="Gameplay" type="Node2D"]
 scale = Vector2(3.5, 3.5)
