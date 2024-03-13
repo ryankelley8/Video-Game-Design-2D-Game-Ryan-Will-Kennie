@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://cd4aa4fmnk8wi"]
+[gd_scene load_steps=8 format=3 uid="uid://cd4aa4fmnk8wi"]
 
 [ext_resource type="Script" path="res://Script/Will's Script/Killbox.gd" id="1_03au1"]
 [ext_resource type="Texture2D" uid="uid://bccyldhv8bw0g" path="res://Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_aa2sc"]
-[ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/Player(Will).tscn" id="3_0athv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cowm8"]
 size = Vector2(2534, 62)
@@ -552,28 +551,25 @@ layer_0/tile_data = PackedInt32Array(0, 0, 0, 1, 131072, 0, 2, 196608, 0, 3, 262
 position = Vector2(-23, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform 1"]
-position = Vector2(624, -25)
+position = Vector2(411, -243)
 shape = SubResource("RectangleShape2D_exjb0")
 
 [node name="Platform 2" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform 2"]
-position = Vector2(717, -111)
+position = Vector2(504, -329)
 shape = SubResource("RectangleShape2D_exjb0")
 
 [node name="Platform 3" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform 3"]
-position = Vector2(827, -191)
+position = Vector2(614, -409)
 shape = SubResource("RectangleShape2D_exjb0")
 
 [node name="Platform 4" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform 4"]
-position = Vector2(938, -273)
+position = Vector2(725, -491)
 shape = SubResource("RectangleShape2D_exjb0")
-
-[node name="Player" parent="." instance=ExtResource("3_0athv")]
-position = Vector2(61, -51)
 
 [connection signal="body_entered" from="Killbox" to="Killbox" method="_on_body_entered"]
