@@ -1,0 +1,84 @@
+[gd_scene load_steps=13 format=3 uid="uid://crhb1t01hdnp6"]
+
+[ext_resource type="Script" path="res://RedPotionPU.gd" id="1_0v72i"]
+[ext_resource type="Texture2D" uid="uid://cloyqa143i1rw" path="res://Scenes/Powerups/animated_items.png" id="1_3tcab"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmfvv"]
+atlas = ExtResource("1_3tcab")
+region = Rect2(0, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utjol"]
+atlas = ExtResource("1_3tcab")
+region = Rect2(32, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_raxed"]
+atlas = ExtResource("1_3tcab")
+region = Rect2(64, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12a3r"]
+atlas = ExtResource("1_3tcab")
+region = Rect2(96, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iicv3"]
+atlas = ExtResource("1_3tcab")
+region = Rect2(128, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0uhut"]
+atlas = ExtResource("1_3tcab")
+region = Rect2(160, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrcab"]
+atlas = ExtResource("1_3tcab")
+region = Rect2(192, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2irfo"]
+atlas = ExtResource("1_3tcab")
+region = Rect2(224, 288, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ee2hl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmfvv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utjol")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_raxed")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12a3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iicv3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0uhut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrcab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2irfo")
+}],
+"loop": true,
+"name": &"Idol",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mup8n"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0v72i")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_ee2hl")
+animation = &"Idol"
+frame = 6
+frame_progress = 0.0790333
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_mup8n")
