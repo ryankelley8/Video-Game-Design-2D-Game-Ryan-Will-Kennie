@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnn20wybegl3c"]
+[gd_scene load_steps=6 format=3 uid="uid://cnn20wybegl3c"]
 
 [ext_resource type="PackedScene" uid="uid://cd4aa4fmnk8wi" path="res://Scenes/Levels/Level1.tscn" id="1_osqkn"]
 [ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/Player(Will).tscn" id="2_15642"]
 [ext_resource type="PackedScene" uid="uid://cu67wrudspsdt" path="res://Scenes/Enemy/enemy.tscn" id="3_atd7d"]
 [ext_resource type="PackedScene" uid="uid://dpg5qt6xm6tb4" path="res://Scenes/Enemy/enemy 2.tscn" id="4_ju0o5"]
-[ext_resource type="PackedScene" uid="uid://d3la5300vd8as" path="res://Scenes/Powerups/Potion Bottle.tscn" id="5_6lqyg"]
 [ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Purple Potion Bottle.tscn" id="6_3xvau"]
 
 [node name="Gameplay" type="Node2D"]
@@ -24,7 +23,7 @@ position = Vector2(841, -42)
 position = Vector2(491.143, -72.5714)
 scale = Vector2(3.5, 3.5)
 
-[node name="Potion Bottle" parent="." instance=ExtResource("5_6lqyg")]
+[node name="Potion Bottle" parent="." instance=ExtResource("6_3xvau")]
 position = Vector2(1060, -38.8571)
 scale = Vector2(2, 2)
 
