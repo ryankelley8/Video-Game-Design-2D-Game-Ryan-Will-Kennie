@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dhu85pf6rn4dl"]
 
-[ext_resource type="Script" path="res://Scenes/Purple Potion.gd" id="1_0ulgi"]
+[ext_resource type="Script" path="res://Script/Purple Potion.gd" id="1_0ulgi"]
 [ext_resource type="Texture2D" uid="uid://cloyqa143i1rw" path="res://Scenes/Powerups/animated_items.png" id="2_uosxo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pbo6q"]
