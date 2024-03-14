@@ -17,6 +17,13 @@ scale = Vector2(3.5, 3.5)
 [node name="Player" parent="." instance=ExtResource("2_15642")]
 position = Vector2(90, -57)
 
+[node name="Marker2D" type="Marker2D" parent="Player"]
+position = Vector2(578, -107)
+scale = Vector2(1, 1)
+
+[node name="Camera2D" type="Camera2D" parent="Player/Marker2D"]
+zoom = Vector2(0.25, 0.25)
+
 [node name="Enemy" parent="." instance=ExtResource("3_atd7d")]
 position = Vector2(2124.29, -283.429)
 
@@ -37,9 +44,3 @@ position = Vector2(642.286, -38.2857)
 
 [node name="Red Potion" parent="." instance=ExtResource("6_ej1hc")]
 position = Vector2(204.857, -20.2857)
-
-[node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(668, -164)
-
-[node name="Camera2D" type="Camera2D" parent="Marker2D"]
-zoom = Vector2(0.25, 0.25)
