@@ -126,6 +126,7 @@ radius = 66.0303
 script = ExtResource("1_850y6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_dc8ga")
 animation = &"Walk Right"
 frame_progress = 0.579687
