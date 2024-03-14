@@ -17,4 +17,4 @@ func _process(delta):
 
 func _on_area_2d_body_entered(body: Node) -> void:
 	if body.is_in_group("Player"):
-		$Area2D.hide()
+		$Area2D/AnimatedSprite2D.hide()
