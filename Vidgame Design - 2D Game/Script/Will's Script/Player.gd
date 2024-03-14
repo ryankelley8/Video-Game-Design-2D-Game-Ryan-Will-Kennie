@@ -61,4 +61,6 @@ func kill():
 	$".".position = $"../Spawn".position
 	print ("I'm Dead!!")
 	
-
+func attack():
+	if Input.is_action_just_pressed("Attack"):
+		pass

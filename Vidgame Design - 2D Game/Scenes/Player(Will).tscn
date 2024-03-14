@@ -384,5 +384,7 @@ autoplay = "Idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Main_Character" groups=["Player"]]
 shape = SubResource("CapsuleShape2D_7erb0")
 
+[node name="Camera2D" type="Camera2D" parent="Main_Character"]
+
 [node name="Spawn" type="Marker2D" parent="."]
 position = Vector2(90, -59)
