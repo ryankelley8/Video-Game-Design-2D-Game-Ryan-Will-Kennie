@@ -279,7 +279,6 @@ autostart = true
 
 [node name="Wall1" type="Area2D" parent="."]
 position = Vector2(553, 202)
-scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1"]
 position = Vector2(-500, 2.08165e-12)
@@ -287,7 +286,6 @@ shape = SubResource("RectangleShape2D_26ib6")
 
 [node name="Wall2" type="Area2D" parent="."]
 position = Vector2(553, 202)
-scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2"]
 position = Vector2(500, 2.08165e-12)

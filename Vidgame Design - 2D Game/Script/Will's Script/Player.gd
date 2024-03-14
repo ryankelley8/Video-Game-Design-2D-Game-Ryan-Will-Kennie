@@ -18,20 +18,31 @@ func _physics_process(delta):
 			velocity.y = JUMP_VELOCITY
 # Get the input direction and handle the movement/deceleration.
 # As good practice, you should replace UI actions with custom gameplay actions.
-		var direction = Input.get_axis("Run left", "Run right")
-		if direction:
-			velocity.x = direction * SPEED
-			$AnimatedSprite2D.play("Run")
-		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED)
-			$AnimatedSprite2D.play("Idle")
-			move_and_slide()
+		#var direction = Input.get_axis("Run left", "Run right")
+	if Input.is_action_pressed("Run right"):
+		velocity.x = 800
+		$Player2.play ("Run")
+	elif Input.is_action_pressed("Run left"):
+		velocity.x = -800
+		$Player2.play ("Run")
+	else:
+		$Player2.play("Idle")
+		
+		#if -SPEED:
+			#$Player2.flip_H = true
+		#if direction:
+			#velocity.x = direction * SPEED
+			##$Player2.play("Run")
+		#else:
+			##velocity.x = move_toward(velocity.x, 0, SPEED)
+			##$Player2.play("Idle")
+		move_and_slide()
 	
 	
-		if velocity.x > 0:
-			$AnimatedSprite2D.flip_h = false
-		elif velocity.x < 0:
-			$AnimatedSprite2D.flip_h = true
+		#if velocity.x > 0:
+			#$AnimatedSprite2D.flip_h = false
+		#elif velocity.x < 0:
+			#$AnimatedSprite2D.flip_h = true
 
 
 func damage(amount):
