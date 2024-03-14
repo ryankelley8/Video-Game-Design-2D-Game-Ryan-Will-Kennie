@@ -32,6 +32,6 @@ scale = Vector2(2, 2)
 position = Vector2(642.286, -38.2857)
 
 [node name="Red Potion" parent="." instance=ExtResource("6_ej1hc")]
-position = Vector2(204.857, -20.2857)
+position = Vector2(342, -29.1429)
 
 [node name="Level1" parent="." instance=ExtResource("1_osqkn")]
