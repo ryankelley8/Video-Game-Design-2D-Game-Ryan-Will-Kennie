@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/Player(Will).tscn" id="2_15642"]
 [ext_resource type="PackedScene" uid="uid://cu67wrudspsdt" path="res://Scenes/Enemy/enemy.tscn" id="3_atd7d"]
 [ext_resource type="PackedScene" uid="uid://dpg5qt6xm6tb4" path="res://Scenes/Enemy/enemy 2.tscn" id="4_ju0o5"]
-[ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Purple Potion Bottle.tscn" id="6_3xvau"]
+[ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Powerups/Money Bag Power-Up.tscn" id="6_3xvau"]
 [ext_resource type="PackedScene" uid="uid://bt8ns1xfnj6d3" path="res://RedPotionPU.tscn" id="6_ej1hc"]
 
 [node name="Gameplay" type="Node2D"]
@@ -19,7 +19,6 @@ position = Vector2(90, -57)
 
 [node name="Marker2D" type="Marker2D" parent="Player"]
 position = Vector2(578, -107)
-scale = Vector2(1, 1)
 
 [node name="Camera2D" type="Camera2D" parent="Player/Marker2D"]
 zoom = Vector2(0.25, 0.25)
