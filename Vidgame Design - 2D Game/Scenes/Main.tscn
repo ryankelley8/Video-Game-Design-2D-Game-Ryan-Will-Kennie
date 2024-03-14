@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cu67wrudspsdt" path="res://Scenes/Enemy/enemy.tscn" id="3_atd7d"]
 [ext_resource type="PackedScene" uid="uid://dpg5qt6xm6tb4" path="res://Scenes/Enemy/enemy 2.tscn" id="4_ju0o5"]
 [ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Purple Potion Bottle.tscn" id="6_3xvau"]
-[ext_resource type="PackedScene" path="res://RedPotionPU.tscn" id="6_ej1hc"]
+[ext_resource type="PackedScene" uid="uid://crhb1t01hdnp6" path="res://RedPotionPU.tscn" id="6_ej1hc"]
 
 [node name="Gameplay" type="Node2D"]
 scale = Vector2(3.5, 3.5)
@@ -21,7 +21,7 @@ position = Vector2(90, -57)
 position = Vector2(841, -42)
 
 [node name="Enemy 2" parent="." instance=ExtResource("4_ju0o5")]
-position = Vector2(1167.71, -70)
+position = Vector2(1145.71, -69.1429)
 scale = Vector2(3.5, 3.5)
 
 [node name="Potion Bottle" parent="." instance=ExtResource("6_3xvau")]

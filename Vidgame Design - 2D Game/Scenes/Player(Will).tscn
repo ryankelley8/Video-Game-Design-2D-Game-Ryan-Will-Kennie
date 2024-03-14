@@ -3,6 +3,10 @@
 [ext_resource type="Script" path="res://Script/Will's Script/Player.gd" id="1_0po3d"]
 [ext_resource type="Texture2D" uid="uid://dccsln40o65wp" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="2_4synh"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7erb0"]
+radius = 33.0
+height = 70.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_2stvc"]
 atlas = ExtResource("2_4synh")
 region = Rect2(0, 1152, 192, 192)
@@ -367,14 +371,13 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7erb0"]
-radius = 33.0
-height = 70.0
-
 [node name="Player" type="Node2D" groups=["Player"]]
 
 [node name="Main_Character" type="CharacterBody2D" parent="." groups=["Player"]]
 script = ExtResource("1_0po3d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Main_Character" groups=["Player"]]
+shape = SubResource("CapsuleShape2D_7erb0")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 script = ExtResource("1_0po3d")
@@ -383,9 +386,6 @@ script = ExtResource("1_0po3d")
 sprite_frames = SubResource("SpriteFrames_bhocb")
 animation = &"Run"
 autoplay = "Idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Main_Character" groups=["Player"]]
-shape = SubResource("CapsuleShape2D_7erb0")
 
 [node name="Main_Character#Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)
