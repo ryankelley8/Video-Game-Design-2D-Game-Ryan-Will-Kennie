@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://crhb1t01hdnp6"]
+[gd_scene load_steps=13 format=3 uid="uid://bt8ns1xfnj6d3"]
 
 [ext_resource type="Script" path="res://RedPotionPU.gd" id="1_0v72i"]
 [ext_resource type="Texture2D" uid="uid://cloyqa143i1rw" path="res://Scenes/Powerups/animated_items.png" id="1_3tcab"]
