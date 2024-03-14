@@ -377,7 +377,7 @@ script = ExtResource("1_0po3d")
 
 [node name="Player2" type="AnimatedSprite2D" parent="Main_Character" groups=["Player"]]
 sprite_frames = SubResource("SpriteFrames_bhocb")
-animation = &"Idle"
+animation = &"Run"
 autoplay = "Idle"
 
 [node name="Camera2D" type="Camera2D" parent="Main_Character"]
