@@ -3,20 +3,26 @@
 [ext_resource type="Script" path="res://Script/Bow powerup.gd" id="1_rgji4"]
 [ext_resource type="Texture2D" uid="uid://lcdg81whelna" path="res://Scenes/Powerups/Bow%26ArrowPS2.webp" id="2_m6m4i"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_78ilv"]
-radius = 266.282
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xr1jq"]
+radius = 184.0
+height = 512.0
 
 [node name="Bow" type="Node2D"]
 scale = Vector2(0.25, 0.25)
 script = ExtResource("1_rgji4")
 
-[node name="Bow_26ArrowPs2" type="Sprite2D" parent="."]
-position = Vector2(0, 1)
-texture = ExtResource("2_m6m4i")
-
 [node name="Area2D" type="Area2D" parent="."]
 
+[node name="Bow_26ArrowPs2" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("2_m6m4i")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_78ilv")
+position = Vector2(4, -12)
+shape = SubResource("CapsuleShape2D_xr1jq")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D"]
+position = Vector2(168, -8)
+
+[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

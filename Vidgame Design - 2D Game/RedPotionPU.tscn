@@ -83,8 +83,7 @@ position = Vector2(1, -0.5)
 scale = Vector2(1.0625, 1.03125)
 sprite_frames = SubResource("SpriteFrames_ee2hl")
 animation = &"Idol"
-frame = 6
-frame_progress = 0.0790333
+frame_progress = 0.66437
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_mup8n")

@@ -376,7 +376,7 @@ height = 70.0
 [node name="Main_Character" type="CharacterBody2D" parent="." groups=["Player"]]
 script = ExtResource("1_0po3d")
 
-[node name="Player2" type="AnimatedSprite2D" parent="Main_Character"]
+[node name="Player2" type="AnimatedSprite2D" parent="Main_Character" groups=["Player"]]
 sprite_frames = SubResource("SpriteFrames_bhocb")
 animation = &"Idle"
 autoplay = "Idle"
