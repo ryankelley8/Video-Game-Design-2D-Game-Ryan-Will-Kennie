@@ -40,8 +40,9 @@ func _physics_process(delta):
 func _process(delta):
 	if alive:
 		if Input.is_action_pressed("Run right"):
-				velocity.x = 800
-				$Player2.play ("Run")
+			velocity.x = 800
+			$Player2.play ("Run")
+			
 		elif Input.is_action_pressed("Run left"):
 			velocity.x = -800
 			$Player2.play ("Run")
