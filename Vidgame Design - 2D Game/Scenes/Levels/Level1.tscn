@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://cd4aa4fmnk8wi"]
+[gd_scene load_steps=8 format=3 uid="uid://cd4aa4fmnk8wi"]
 
 [ext_resource type="Script" path="res://Script/Will's Script/Killbox.gd" id="1_03au1"]
 [ext_resource type="Texture2D" uid="uid://bccyldhv8bw0g" path="res://Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_aa2sc"]
-[ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/Player(Will).tscn" id="3_ahcoq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cowm8"]
 size = Vector2(2534, 62)
@@ -572,8 +571,5 @@ shape = SubResource("RectangleShape2D_exjb0")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform 4"]
 position = Vector2(725, -491)
 shape = SubResource("RectangleShape2D_exjb0")
-
-[node name="Player" parent="." instance=ExtResource("3_ahcoq")]
-position = Vector2(97, -90)
 
 [connection signal="body_entered" from="Killbox" to="Killbox" method="_on_body_entered"]

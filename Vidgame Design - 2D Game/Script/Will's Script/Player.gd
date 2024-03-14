@@ -19,14 +19,7 @@ func _physics_process(delta):
 # Get the input direction and handle the movement/deceleration.
 # As good practice, you should replace UI actions with custom gameplay actions.
 		#var direction = Input.get_axis("Run left", "Run right")
-	if Input.is_action_pressed("Run right"):
-		velocity.x = 800
-		$Player2.play ("Run")
-	elif Input.is_action_pressed("Run left"):
-		velocity.x = -800
-		$Player2.play ("Run")
-	else:
-		$Player2.play("Idle")
+	
 		
 		#if -SPEED:
 			#$Player2.flip_H = true
@@ -44,6 +37,17 @@ func _physics_process(delta):
 		#elif velocity.x < 0:
 			#$AnimatedSprite2D.flip_h = true
 
+func _process(delta):
+	if alive:
+		if Input.is_action_pressed("Run right"):
+				velocity.x = 800
+				$Player2.play ("Run")
+		elif Input.is_action_pressed("Run left"):
+			velocity.x = -800
+			$Player2.play ("Run")
+		else:
+			$Player2.play("Idle")
+			velocity.x = 0
 
 func damage(amount):
 	health -= amount
