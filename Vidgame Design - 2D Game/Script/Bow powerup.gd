@@ -1,6 +1,6 @@
 extends Node2D
 
-var projectile = preload("res://Scenes/fire_projectile.png")
+const projectile = preload("res://Scenes/fire_projectile.png")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -17,7 +17,12 @@ func _process(delta):
 func _on_area_2d_body_entered(body):
 	print(body)
 	reparent(body)
+#func attack():
+	#projectile.instantiate()
+	#projectile.position = $Area2D/Marker2D.position
+	#add_child(projectile)
 func attack():
-	projectile.instantiate()
-	projectile.position = $Area2D/Marker2D.position
-	add_child(projectile)
+	#make the projectile its own scene
+	var new_bullet = projectile.instantiate()
+	new_bullet.position = $Area2D/Marker2D.position
+	add_child(new_bullet)
