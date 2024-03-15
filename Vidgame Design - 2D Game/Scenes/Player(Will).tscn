@@ -375,7 +375,7 @@ radius = 34.0147
 [node name="Main_Character" type="CharacterBody2D" parent="." groups=["Player"]]
 script = ExtResource("1_0po3d")
 
-[node name="Player2" type="AnimatedSprite2D" parent="Main_Character" groups=["Player"]]
+[node name="Player2" type="AnimatedSprite2D" parent="Main_Character"]
 sprite_frames = SubResource("SpriteFrames_bhocb")
 animation = &"Run"
 autoplay = "Idle"

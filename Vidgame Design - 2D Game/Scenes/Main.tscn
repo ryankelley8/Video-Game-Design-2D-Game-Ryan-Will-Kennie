@@ -11,9 +11,11 @@
 scale = Vector2(3.5, 3.5)
 
 [node name="Player" parent="." instance=ExtResource("2_15642")]
+texture_filter = 1
 position = Vector2(90, -57)
 
 [node name="Enemy" parent="." instance=ExtResource("3_atd7d")]
+texture_filter = 1
 position = Vector2(2124.29, -283.429)
 
 [node name="Enemy 2" parent="." instance=ExtResource("4_ju0o5")]
@@ -21,17 +23,21 @@ position = Vector2(1145.71, -69.1429)
 scale = Vector2(3.5, 3.5)
 
 [node name="Potion Bottle" parent="." instance=ExtResource("6_3xvau")]
+texture_filter = 1
 position = Vector2(969.143, -26)
 scale = Vector2(2, 2)
 
 [node name="Potion Bottle 2" parent="." instance=ExtResource("6_3xvau")]
+texture_filter = 1
 position = Vector2(1060, -38.8571)
 scale = Vector2(2, 2)
 
 [node name="Potion Bottle 3" parent="." instance=ExtResource("6_3xvau")]
+texture_filter = 1
 position = Vector2(642.286, -38.2857)
 
 [node name="Red Potion" parent="." instance=ExtResource("6_ej1hc")]
 position = Vector2(342, -29.1429)
 
 [node name="Level1" parent="." instance=ExtResource("1_osqkn")]
+texture_filter = 1
