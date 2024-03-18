@@ -117,7 +117,7 @@ texture_filter = 1
 position = Vector2(1, -0.5)
 scale = Vector2(1.0625, 1.03125)
 sprite_frames = SubResource("SpriteFrames_ee2hl")
-animation = &"Pop"
+animation = &"Idol"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_mup8n")

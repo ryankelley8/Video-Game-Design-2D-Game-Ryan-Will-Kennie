@@ -8,10 +8,13 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-	position.x += speed
+func _process(delta):
+	position += transform.x * speed * delta
 	
-
+func _on_Bullet_body_entered(body):
+	if body.is_in_group("mobs"):
+		body.queue_free()
+		queue_free()
 
 
 #func _on_area_2d_body_entered(body):
