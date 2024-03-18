@@ -2,17 +2,20 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+var SPEED = 150.0
 const JUMP_VELOCITY = -400.0
 const projectile = preload("res://Scenes/Enemy/projectile.tscn")
-# Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-var direction = velocity.x
+var direction = 1
+var turnAround_timer = .5
+var CanturnAround = true
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	#move_left()
+	$"../Direction timer".start()
+	_turnAround()
+	move_enemy()
 	move_and_slide()
 
 
@@ -21,17 +24,18 @@ func _on_fire_rate_timeout():
 	new_bullet.position = $Marker2D.position
 	add_child(new_bullet)
 
+func move_enemy():
+	$"../Direction timer".start(turnAround_timer)
+	if CanturnAround:
+		velocity.x = -150
+	else:
+		velocity.x = 150
 
 
-#func _on_wall_1_body_entered(body):
-	#$".".flip_h = false
+func _on_direction_timer_timeout():
+	var CanturnAround = false
+	$"../Direction timer".stop()
 
-
-func move_left():
-	velocity.x = -200
-func move_right():
-	velocity.x = 200
-
-
-#func _on_wall_2_body_entered(body):
-	#$".".flip_h = true
+func _turnAround():
+	var CanturnAround = true
+	$"../Direction timer".start()

@@ -275,7 +275,6 @@ autostart = true
 
 [node name="Direction timer" type="Timer" parent="."]
 process_callback = 0
-autostart = true
 
 [node name="Wall1" type="Area2D" parent="."]
 position = Vector2(553, 202)
@@ -300,5 +299,3 @@ shape = SubResource("RectangleShape2D_hfcs0")
 
 [connection signal="timeout" from="Fire rate" to="CharacterBody2D" method="_on_fire_rate_timeout"]
 [connection signal="timeout" from="Direction timer" to="CharacterBody2D" method="_on_direction_timer_timeout"]
-[connection signal="body_entered" from="Wall1" to="CharacterBody2D" method="_on_wall_1_body_entered"]
-[connection signal="body_entered" from="Wall2" to="CharacterBody2D" method="_on_wall_2_body_entered"]
