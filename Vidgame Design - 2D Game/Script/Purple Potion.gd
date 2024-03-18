@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var health = 20
 #func _on_PurplePotionBottle_body_entered(body: Node) -> void:
 	## Check if the colliding body is the player
 	#if body.is_in_group("Player"):
@@ -18,3 +19,4 @@ func _process(delta):
 func _on_area_2d_body_entered(body: Node) -> void:
 	if body.is_in_group("Player"):
 		$Area2D/AnimatedSprite2D.hide()
+		health += 2

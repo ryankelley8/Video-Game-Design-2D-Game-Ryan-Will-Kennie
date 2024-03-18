@@ -3,6 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 800.0
 const JUMP_VELOCITY = -700.0
+var speed = 750
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -16,6 +17,8 @@ func _physics_process(delta):
 # Handle jump.
 		if Input.is_action_just_pressed("Jump") and is_on_floor():
 			velocity.y = JUMP_VELOCITY
+		if Input.is_action_just_pressed('ui_select'):
+			shoot()
 # Get the input direction and handle the movement/deceleration.
 # As good practice, you should replace UI actions with custom gameplay actions.
 		#var direction = Input.get_axis("Run left", "Run right")
@@ -66,3 +69,12 @@ func kill():
 func attack():
 	if Input.is_action_just_pressed("Attack"):
 		pass
+		
+func shoot():
+	var b = $"../Projectile".instance()
+	add_child(b)
+	b.transform = $"../Projectile".transform
+
+#func red_potion():
+	#if body.is_in_group("Potion"):
+		#health += 2
