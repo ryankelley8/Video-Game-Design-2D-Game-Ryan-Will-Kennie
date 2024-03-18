@@ -1,8 +1,7 @@
-[gd_scene load_steps=54 format=3 uid="uid://dkqvwh031it41"]
+[gd_scene load_steps=53 format=3 uid="uid://dkqvwh031it41"]
 
 [ext_resource type="Script" path="res://Script/Will's Script/Player.gd" id="1_0po3d"]
 [ext_resource type="Texture2D" uid="uid://dccsln40o65wp" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="2_4synh"]
-[ext_resource type="PackedScene" uid="uid://sed6s3iloh0j" path="res://Scenes/Enemy/projectile.tscn" id="3_r23eq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2stvc"]
 atlas = ExtResource("2_4synh")
@@ -389,6 +388,3 @@ shape = SubResource("CircleShape2D_c02kv")
 
 [node name="Spawn" type="Marker2D" parent="."]
 position = Vector2(90, -59)
-
-[node name="Projectile" parent="." instance=ExtResource("3_r23eq")]
-position = Vector2(-346, 533)
