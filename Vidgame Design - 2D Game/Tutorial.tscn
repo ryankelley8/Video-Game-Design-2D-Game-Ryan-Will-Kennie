@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://cu3qptg5majv8"]
+
+[ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/Player(Will).tscn" id="1_fwpuo"]
+[ext_resource type="PackedScene" uid="uid://drbl6mvnjfgvl" path="res://Scenes/Power Ups.tscn" id="2_fr6bs"]
+[ext_resource type="Texture2D" uid="uid://b7r1nw38lyvai" path="res://mystic_woods_free_2/sprites/tilesets/floors/flooring.png" id="3_588ns"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_il7eb"]
+size = Vector2(582, 73)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_fwpuo")]
+position = Vector2(243, 210)
+
+[node name="Bow" parent="." instance=ExtResource("2_fr6bs")]
+position = Vector2(388, 204)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 56.0
+offset_top = 267.0
+offset_right = 558.0
+offset_bottom = 315.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(297, 294)
+shape = SubResource("RectangleShape2D_il7eb")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+show_behind_parent = true
+offset_right = 656.0
+offset_bottom = 346.0
+texture = ExtResource("3_588ns")
