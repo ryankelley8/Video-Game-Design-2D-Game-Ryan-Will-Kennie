@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cu3qptg5majv8"]
 
 [ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/Player(Will).tscn" id="1_fwpuo"]
-[ext_resource type="PackedScene" uid="uid://drbl6mvnjfgvl" path="res://Scenes/Power Ups.tscn" id="2_fr6bs"]
+[ext_resource type="PackedScene" uid="uid://drbl6mvnjfgvl" path="res://Scenes/Bow.tscn" id="2_fr6bs"]
 [ext_resource type="Texture2D" uid="uid://b7r1nw38lyvai" path="res://mystic_woods_free_2/sprites/tilesets/floors/flooring.png" id="3_588ns"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_il7eb"]

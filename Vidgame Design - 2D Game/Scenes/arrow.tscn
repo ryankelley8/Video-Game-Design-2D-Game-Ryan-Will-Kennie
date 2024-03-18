@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://pb2agxfjmr2f"]
+
+[ext_resource type="Texture2D" uid="uid://b2mm6kcu4b4yl" path="res://Scenes/arrow.png" id="1_kpy42"]
+[ext_resource type="Script" path="res://Script/arrow.gd" id="2_cexon"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vt03n"]
+radius = 259.322
+height = 665.027
+
+[node name="Arrow" type="Sprite2D"]
+position = Vector2(126, -18)
+rotation = 1.5708
+scale = Vector2(0.121471, 0.132326)
+texture = ExtResource("1_kpy42")
+script = ExtResource("2_cexon")
+speed = 10.0
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(148.184, -1012.65)
+shape = SubResource("CapsuleShape2D_vt03n")
