@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgfqjsykdua5a"]
+
+[ext_resource type="Texture2D" uid="uid://cr5xpr3rjnj8v" path="res://mystic_woods_free_2/sprites/pixel-art-hell-seamless-background-detailed-vector-23730667.png" id="1_skcen"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Pixel-art-hell-seamless-background-detailed-vector-23730667" type="Sprite2D" parent="."]
+position = Vector2(1336, 659)
+scale = Vector2(2.66, 1.69231)
+texture = ExtResource("1_skcen")

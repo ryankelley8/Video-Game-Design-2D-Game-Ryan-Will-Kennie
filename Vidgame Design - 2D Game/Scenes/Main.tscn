@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnn20wybegl3c"]
+[gd_scene load_steps=8 format=3 uid="uid://cnn20wybegl3c"]
 
 [ext_resource type="PackedScene" uid="uid://cd4aa4fmnk8wi" path="res://Scenes/Levels/Level1.tscn" id="1_osqkn"]
 [ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/Player(Will).tscn" id="2_15642"]
@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://dpg5qt6xm6tb4" path="res://Scenes/Enemy/enemy 2.tscn" id="4_ju0o5"]
 [ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Purple Potion Bottle.tscn" id="6_3xvau"]
 [ext_resource type="PackedScene" uid="uid://bt8ns1xfnj6d3" path="res://RedPotionPU.tscn" id="6_ej1hc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j2xx"]
+size = Vector2(120.571, 716.572)
 
 [node name="Gameplay" type="Node2D"]
 scale = Vector2(3.5, 3.5)
@@ -41,3 +44,13 @@ position = Vector2(342, -29.1429)
 
 [node name="Level1" parent="." instance=ExtResource("1_osqkn")]
 texture_filter = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-50.2857, -278.286)
+shape = SubResource("RectangleShape2D_8j2xx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D/CollisionShape2D"]
+position = Vector2(3385.72, 3.4285)
+shape = SubResource("RectangleShape2D_8j2xx")
