@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://bt8ns1xfnj6d3"]
+[gd_scene load_steps=19 format=3 uid="uid://bt8ns1xfnj6d3"]
 
 [ext_resource type="Script" path="res://RedPotionPU.gd" id="1_0v72i"]
 [ext_resource type="Texture2D" uid="uid://cloyqa143i1rw" path="res://Scenes/Powerups/animated_items.png" id="1_3tcab"]
+[ext_resource type="Texture2D" uid="uid://cs5dmmxrwotv" path="res://mystic_woods_free_2/sprites/particles/dust_particles_01.png" id="3_fwxsu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hmfvv"]
 atlas = ExtResource("1_3tcab")
@@ -35,6 +36,22 @@ region = Rect2(192, 288, 32, 32)
 atlas = ExtResource("1_3tcab")
 region = Rect2(224, 288, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynv4d"]
+atlas = ExtResource("3_fwxsu")
+region = Rect2(0, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nenmb"]
+atlas = ExtResource("3_fwxsu")
+region = Rect2(12, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvnum"]
+atlas = ExtResource("3_fwxsu")
+region = Rect2(24, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yygme"]
+atlas = ExtResource("3_fwxsu")
+region = Rect2(36, 0, 12, 12)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_ee2hl"]
 animations = [{
 "frames": [{
@@ -65,20 +82,48 @@ animations = [{
 "loop": true,
 "name": &"Idol",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynv4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nenmb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tvnum")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yygme")
+}],
+"loop": true,
+"name": &"Pop",
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mup8n"]
+radius = 9.05539
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_082vq"]
+radius = 5.0
+
+[node name="Red Potion" type="Node2D" groups=["Potion"]]
 script = ExtResource("1_0v72i")
 
 [node name="Area2D" type="Area2D" parent="."]
+texture_filter = 1
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+position = Vector2(1, -0.5)
+scale = Vector2(1.0625, 1.03125)
 sprite_frames = SubResource("SpriteFrames_ee2hl")
-animation = &"Idol"
-frame = 6
-frame_progress = 0.0790333
+animation = &"Pop"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_mup8n")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-3, -9)
+shape = SubResource("CircleShape2D_082vq")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

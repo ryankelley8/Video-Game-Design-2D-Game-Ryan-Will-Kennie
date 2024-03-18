@@ -367,9 +367,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7erb0"]
-radius = 33.0
-height = 70.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_c02kv"]
+radius = 34.0147
 
 [node name="Player" type="Node2D" groups=["Player"]]
 
@@ -378,13 +377,14 @@ script = ExtResource("1_0po3d")
 
 [node name="Player2" type="AnimatedSprite2D" parent="Main_Character"]
 sprite_frames = SubResource("SpriteFrames_bhocb")
-animation = &"Idle"
+animation = &"Run"
 autoplay = "Idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Main_Character" groups=["Player"]]
-shape = SubResource("CapsuleShape2D_7erb0")
-
 [node name="Camera2D" type="Camera2D" parent="Main_Character"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Main_Character"]
+position = Vector2(1, 4)
+shape = SubResource("CircleShape2D_c02kv")
 
 [node name="Spawn" type="Marker2D" parent="."]
 position = Vector2(90, -59)
