@@ -43,9 +43,6 @@ Attack={
 ]
 }
 
-[physics]
-
-
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
