@@ -1,6 +1,5 @@
 [gd_scene load_steps=8 format=3 uid="uid://cnn20wybegl3c"]
 
-[ext_resource type="Texture2D" uid="uid://cr5xpr3rjnj8v" path="res://mystic_woods_free_2/sprites/pixel-art-hell-seamless-background-detailed-vector-23730667.png" id="1_5ccee"]
 [ext_resource type="PackedScene" uid="uid://cd4aa4fmnk8wi" path="res://Scenes/Levels/Level1.tscn" id="1_osqkn"]
 [ext_resource type="PackedScene" uid="uid://dkqvwh031it41" path="res://Scenes/Player(Will).tscn" id="2_15642"]
 [ext_resource type="PackedScene" uid="uid://cu67wrudspsdt" path="res://Scenes/Enemy/enemy.tscn" id="3_atd7d"]
@@ -8,20 +7,11 @@
 [ext_resource type="PackedScene" uid="uid://dhu85pf6rn4dl" path="res://Scenes/Purple Potion Bottle.tscn" id="6_3xvau"]
 [ext_resource type="PackedScene" uid="uid://bt8ns1xfnj6d3" path="res://RedPotionPU.tscn" id="6_ej1hc"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j2xx"]
+size = Vector2(120.571, 716.572)
+
 [node name="Gameplay" type="Node2D"]
 scale = Vector2(3.5, 3.5)
-
-[node name="Pixel-art-hell-seamless-background-detailed-vector-23730667" type="Sprite2D" parent="."]
-position = Vector2(164, -190)
-texture = ExtResource("1_5ccee")
-
-[node name="Pixel-art-hell-seamless-background-detailed-vector-23730668" type="Sprite2D" parent="."]
-position = Vector2(1153.71, -189.714)
-texture = ExtResource("1_5ccee")
-
-[node name="Pixel-art-hell-seamless-background-detailed-vector-23730669" type="Sprite2D" parent="."]
-position = Vector2(2133.71, -194.857)
-texture = ExtResource("1_5ccee")
 
 [node name="Player" parent="." instance=ExtResource("2_15642")]
 texture_filter = 1
@@ -32,7 +22,7 @@ texture_filter = 1
 position = Vector2(2124.29, -283.429)
 
 [node name="Enemy 2" parent="." instance=ExtResource("4_ju0o5")]
-position = Vector2(850.286, -66)
+position = Vector2(1145.71, -69.1429)
 scale = Vector2(3.5, 3.5)
 
 [node name="Potion Bottle" parent="." instance=ExtResource("6_3xvau")]
@@ -48,16 +38,19 @@ scale = Vector2(2, 2)
 [node name="Potion Bottle 3" parent="." instance=ExtResource("6_3xvau")]
 texture_filter = 1
 position = Vector2(642.286, -38.2857)
-scale = Vector2(2, 2)
 
 [node name="Red Potion" parent="." instance=ExtResource("6_ej1hc")]
 position = Vector2(342, -29.1429)
-scale = Vector2(2, 2)
 
 [node name="Level1" parent="." instance=ExtResource("1_osqkn")]
 texture_filter = 1
-position = Vector2(-341.429, 7.71429)
 
-[node name="Level1" parent="Level1" instance=ExtResource("1_osqkn")]
-texture_filter = 1
-position = Vector2(2505.14, 9.53674e-07)
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-50.2857, -278.286)
+shape = SubResource("RectangleShape2D_8j2xx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D/CollisionShape2D"]
+position = Vector2(3385.72, 3.4285)
+shape = SubResource("RectangleShape2D_8j2xx")
